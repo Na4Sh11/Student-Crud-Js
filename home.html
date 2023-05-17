@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student CRUD</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to,</h1>
+        <p>Student CRUD Application</p>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="#section--1">CREATE</a></li>
+                <li><a href="#section--2">READ</a></li>
+                <li><a href="#section--3">UPDATE</a></li>
+                <li><a href="#section--3">DELETE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="section--1">
+        <h1>CREATE</h1>
+        <br>
+        <form name="form1" id="form1">
+            <label>Student ID</label>
+            <input class="sid" type="number" placeholder="Student ID"><br>
+            <label>First Name</label>
+            <input class="fname" type="text" placeholder="First Name" /><br />
+            <label>Last Name</label>
+            <input class="lname" type="text" placeholder="Last Name" /><br />
+            <label>Date Of Birth</label>
+            <input class="dob" type="date" /><br />
+            <label>Email</label>
+            <input class="mail" type="email" placeholder="Email id" /><br />
+            <label>class</label>
+            <select id="standard">
+                <option value="1" selected="selected">1</option>
+                <option value="2" selected="selected">2</option>
+                <option value="3" selected="selected">3</option>
+                <option value="4" selected="selected">4</option>
+                <option value="5" selected="selected">5</option>
+                <option value="6" selected="selected">6</option>
+                <option value="7" selected="selected">7</option>
+                <option value="8" selected="selected">8</option>
+                <option value="9" selected="selected">9</option>
+                <option value="10" selected="selected">10</option>
+                <option value="11" selected="selected">11</option>
+                <option value="12" selected="selected">12</option>
+            </select>
+            <br />
+            <label>section</label>
+            <select id="division">
+                <option value="A" selected="selected">A</option>
+                <option value="B" selected="selected">B</option>
+                <option value="C" selected="selected">C</option>
+                <option value="D" selected="selected">D</option>
+            </select>
+            <div>
+                <button class="click">submit</button>
+            </div>
+    </section>
+    <section id="section--2">
+        <br>
+        <h1>UPDATE / DELETE </h1>
+        <br>
+        <h4>
+            Enter Students ID :
+            <input type="number" class="s">
+            <button class="find">Enter</button>
+        </h4>
+        <br>
+    </section>
+    <section id="section--3">
+        <br>
+        <h1>Update Student details</h1>
+        <br>
+        <div class="udiv" id="upddiv">
+            <form name="form1" id="form1">
+                <label>First Name</label>
+                <input class="ufname" type="text" placeholder="First Name" /><br />
+                <label>Last Name</label>
+                <input class="ulname" type="text" placeholder="Last Name" /><br />
+                <label>Date Of Birth</label>
+                <input class="udob" type="date" /><br />
+                <label>Email</label>
+                <input class="umail" type="email" placeholder="Email id" /><br />
+                <label>class</label>
+                <select id="ustandard">
+                    <option value="1" selected="selected">1</option>
+                    <option value="2" selected="selected">2</option>
+                    <option value="3" selected="selected">3</option>
+                    <option value="4" selected="selected">4</option>
+                    <option value="5" selected="selected">5</option>
+                    <option value="6" selected="selected">6</option>
+                    <option value="7" selected="selected">7</option>
+                    <option value="8" selected="selected">8</option>
+                    <option value="9" selected="selected">9</option>
+                    <option value="10" selected="selected">10</option>
+                    <option value="11" selected="selected">11</option>
+                    <option value="12" selected="selected">12</option>
+                </select>
+                <br />
+                <label>section</label>
+                <select id="udivision">
+                    <option value="A" selected="selected">A</option>
+                    <option value="B" selected="selected">B</option>
+                    <option value="C" selected="selected">C</option>
+                    <option value="D" selected="selected">D</option>
+                </select>
+        </div>
+        <button class="upd" id="update">Update</button>
+        <button class="del" id="delete">Delete</button>
+    </section>
+    <section id="section--4">
+        <br>
+        <h1> Student DataBase</h1>
+        <br>
+    </section>
+    <script src="student.js"></script>
+</body>
+
+</html>
